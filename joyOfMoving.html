@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy of Moving Methodolgy - Kinder™ USA - Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="/Images/title_icon.ico" rel="icon">
+    <link href="joyOfMoving.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <!-- Below 6 lines are for hamburger icon in mobile view -->
+            <!-- Below 1 line is for check box which is for toggle box -->
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <!-- Below 5 lines are for the three lines which act as the hamburger icon -->
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Here after it would be for the navigations -->
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="/Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="/Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="slide1">
+            <div class="slide1_left">
+                <div class="content">
+                    <h1>JOY OF MOVING METHODOLOGY</h1>
+                    <p>
+                        The Kinder Joy of moving project is inspired by an
+                        innovative educational method called JOY OF
+                        MOVING, The method, which is inspired by play, is
+                        based on a relational and social vision and it is
+                        designed to engage every aspect of the individual
+                        as he or she grows, developing physical fitness,
+                        motor coordination, cognitive functions and life
+                        skills in synergy, to boost autonomy and the ability
+                        to face the challenges encountered in everyday life.
+                    </p>
+                </div>
+            </div>
+            <div class="slide1_right">
+                <img src="/Images/joy_moving_slide.avif" alt="Joy Of moving"/>
+            </div>
+        </div>
+        <div class="video_section">
+            <div class="social_media_header">
+                <h1>WATCH DR. SPYRIDOULA VAZOU DISCUSS THE KINDER JOY OF MOVING METHODOL0GY.</h1>
+            </div>
+            <div class="social_media_cards">
+                <div class="social_media_card">
+                    <a href="https://vod.ferrero.com/kinder-com/us/JOM_KinderUS_Social_Methodology_B.mp4" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card1">
+                            <img src="/Images/video_section_function.jpg" alt="Function"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="social_media_card">
+                    <a href="https://vod.ferrero.com/kinder-com/us/JOM_KinderUS_Social_Methodology_A.mp4" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card2">
+                            <img src="/Images/video_section_cognitive.jpg" alt="Cognitive"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="social_media_card">
+                    <a href="https://vod.ferrero.com/kinder-com/us/JOM_KinderUS_Social_Methodology_C.mp4" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card3">
+                            <img src="/Images/video_section_motor.jpg" alt="Motor coordination"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="sub_section_1">
+                <div class="left_part">
+                    <h1>PHYSICAL FITNESS</h1>
+                    <p>ENCOURAGES AND TEACHES FITNESS</p>
+                </div>
+                <div class="right_part">
+                    <img src="/Images/joy_moving_img1.webp"/>
+                </div>
+            </div>
+            <div class="sub_section_2">
+                <div class="left_part">
+                    <img src="/Images/joy_moving_img2.webp"/>
+                </div>
+                <div class="right_part">
+                    <h1>MOTOR COORDINATION</h1>
+                    <p>TEACHES ABILITY TO PERFORM COMPLEX MOVEMENTS</p>
+                </div>
+            </div>
+            <div class="sub_section_3">
+                <div class="left_part">
+                    <h1>COGNITIVE FUNTION & CREATIVITY</h1>
+                    <p>HELPS ABILITY TO THINK, PLAN AND MEMORIZE</p>
+                </div>
+                <div class="right_part">
+                    <img src="/Images/joy_moving_img3.webp"/>
+                </div>
+            </div>
+            <div class="sub_section_4">
+                <div class="left_part">
+                    <img src="/Images/joy_moving_img1.webp"/>
+                </div>
+                <div class="right_part">
+                    <h1>LIFE SKILLS</h1>
+                    <p>DEFINE GOALS, THINK POSITIVELY, COMMUNICATE EFFECTIVELY</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerContent">
+                <!-- Ferrero -->
+                <div class="ferrero">
+                    <img src="/Images/ferroro.png" width="140px" height="19px" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="noFullWidth menuItem">
+                            <a href="cookies.html">Cookie Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="technical.html">Technical Requirements</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="site.html">Site Map</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="ads.html">About our Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Language Set Area -->
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+    </div>
+</body>
+</html>

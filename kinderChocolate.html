@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder Chocolate - Kinder™ USA - Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="/Images/title_icon.ico" rel="icon">
+    <link href="kinderChocolate.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <!-- Below 6 lines are for hamburger icon in mobile view -->
+            <!-- Below 1 line is for check box which is for toggle box -->
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <!-- Below 5 lines are for the three lines which act as the hamburger icon -->
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Here after it would be for the navigations -->
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="/Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="/Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <!-- Cart -->
+
+        <button id="buynow_btn"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+        <div class="addcart" id="addcart-model">
+            <div class="popup">
+                <span class="close-btn" id="close" style="font-size: 2rem">&times;</span>
+                <div class="products">
+                    <h1>Kinder JOY</h1>
+                    <p>
+                        Treat + Toy, twice the Joy! Open up the
+                        iconic Kinder JOY egg and share a moment
+                        of surprise and delight. One side holds a
+                        delicious treat: two layers of milky sweet
+                        creams, topped with two crispy wafer bites
+                        filled with cocoa cream. The other side
+                        holds an exciting mystery toy! Extend the
+                        Kinder Joy playing experience and enter the
+                        imaginative world of Applaydu, a free and
+                        fun educational game app designed for
+                        kids. Applaydu revolutionizes kid’s play,
+                        helps develop creativity and supports
+                        children’s growth through fun family
+                        activities that can be played together, even
+                        offline. It is 100% free to download, has no
+                        ads, no in-app purchases, and supports 16
+                        languages!
+                    </p>
+                    <div class="products_list">
+                        <div class="product count3" data-id="1" data-name="Kinder JOY - 3 count" data-price="436.91" data-image="../FINAL PROJECT/Images/3count.jpg">
+                            <p>Kinder JOY - 3 Count</p>
+                            <p>Price: ₹436.91</p>
+                            <img src="/Images/3count.jpg" alt="Kinder JOY pack of count 3" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                        <div class="product count6" data-id="2" data-name="Kinder JOY - 6 count" data-price="726.59" data-image="../FINAL PROJECT/Images/6count.jpg">
+                            <p>Kinder JOY - 6 Count</p>
+                            <p>Price: ₹726.59</p>
+                            <img src="/Images/6count.jpg" alt="Kinder JOY pack of count 6" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="products_list">
+                        <div class="product count12" data-id="3" data-name="Kinder JOY - 12 count" data-price="1453.54" data-image="../FINAL PROJECT/Images/12count.jpg">
+                            <p>Kinder JOY - 12 Count</p>
+                            <p>Price: ₹1,453.54</p>
+                            <img src="/Images/12count.jpg" alt="Kinder JOY pack of count 9" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                        <div class="product count16" data-id="4" data-name="Kinder JOY - 15 count" data-price="1817.31" data-image="../FINAL PROJECT/Images/15count.jpg">
+                            <p>Kinder JOY - 15 Count</p>
+                            <p>Price: ₹1,817.31</p>
+                            <img src="/Images/15count.jpg" alt="Kinder JOY pack of count 15" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <h1>CART</h1>
+                    <div class="contentCart">
+                        <p id="empty"></p>
+                    </div>
+                    <button id="creditBtn">Click to Proceed</button>
+                    <p id="cartresult"></p>
+                </div>
+            </div>
+        </div>
+        <div class="creditPopup">
+            <div class="creditContent">
+                <p class="exit" id="exit-btn" style="cursor:pointer;">✗</p>
+                <h1>Card and Address Details</h1>
+                <div class="creditcardsession">
+                    <form class="form">
+                        <label for="name" style="text-align:left;">CARDHOLDER NAME</label>
+                        <input id="name" placeholder="Jane Appleseed" type="text" required/>
+                        <label for="number" style="text-align:left;">CARD NUMBER</label>
+                        <input id="number" placeholder="1234 5678 9123 0000" type="number" required/>
+                        <div class="subform">
+                            <div class="subform1">
+                                <label for="month">EXP.DATE (MM/YY)</label>
+                                <div class="expire_date">
+                                    <input id="month" type="number" min="1" max="12" placeholder="MM" maxlength:"2" minlength:"1" required/>
+                                    <input id="year" type="number" placeholder="YY" min="25" max"99" maxlength:"2" minlendth:"2" value="25" required/>
+                                </div>
+                            </div>
+                            <div class="subform2">
+                                <label for="cvc">CVC</label>
+                                <input id="cvc" type="number" placeholder="123" required/>
+                            </div>
+                        </div>
+                        <div></div>
+                    </form>
+                </div>
+                <div class="address">
+                    <form class="addressForm">
+                        <label for="receiver">NAME</label>
+                        <div></div>
+                        <input id="receiver" placeholder="Jane Appleseed" type="text" required/>
+                        <div></div>
+                        <label for="addresscontent">ADDRESS</label>
+                        <div></div>
+                        <textarea id="addresscontent" rows="4" cols="80" style="border-radius:1rem;border:1px solid #DFDFDF;background-color:transparent;padding:0 20px;outline:none;font-size:16px;width:100%;box-sizing:border-box;resize:none;display:block;" required></textarea>
+                        <div></div>
+                        <label for="phonenumber">MOBILE NUMBER</label>
+                        <div></div>
+                        <input id="phonenumber" type="tel" required/>
+                        <div></div>
+                    </form>
+                </div>
+                <button id="buy__btn" style="position:absolute;bottom:5rem;left:0;width:97%;margin:1rem;">Confirm</button>
+                <p class="finalResult"></p>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="slide">
+            <div class="video">
+                <video autoplay muted loop playsinline id="bg-video">
+                    <source src="/Images/kinder_chocolate.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="chocolate">
+            <div class="left">
+                <img src="/Images/kinder_chocolate_bars.avif"/>
+            </div>
+            <div class="right">
+                <p class="point1">
+                    <span>✓</span> &nbsp; NO ARTIFICIAL COLORS!
+                </p>
+                <p class="point2">
+                    <span>✓</span> &nbsp; NO PRESERVATIVES!
+                </p>
+                <p class="point3">
+                    <span>✓</span> &nbsp; NO PRESERVATIVES!
+                </p>
+                <P class="point4">
+                    CRAFTED FOR KIDS, LOVED BY ALL
+                </P>
+            </div>
+        </div>
+        
+        <section class="advertisement">
+            <div class="advertisement_content">
+                <div class="advertisement_video_content">
+                    <h2>
+                        CHECK OUT OUR<br>
+                        LATEST KINDER<br>
+                        CHOCOLATE<br>
+                        TV SPOT
+                    </h2>
+                </div>
+                <div class="advertisement_video">
+                    <div class="advertisement_video_article">
+                        <div class="tv_frame">
+                            <div class="video">
+                                <video autoplay muted loop controls>
+                                    <source src="/Images/27796_kinder_kinderchocolate2023movienight30tvcnew_30_qfbt1685000h_unslated_1.mp4" type="video/mp4"/>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="downward_curve">
+                <svg class="curve" viewBox="0 0 1440 150" preserveAspectRatio="none">
+                    <path d="M0,0 C480,150 960,150 1440,0 L1440,150 L0,150 Z" fill="var(--kinder-light-bg)"/>
+                </svg>
+            </div>
+        </section>
+        
+        <div class="nutrient">
+            <div class="ingredients">
+                <h1>INGREDIENTS</h1>
+                <p>
+                   MILK CHOCOLATE (SUGAR, MILK POWDER, COCOA BUTTER, COCOA MASS, LECITHIN AS EMULSIFIER, VANILLIN: AN ARTIFICIAL FLAVOR), SUGAR, SKIM MILK POWDER, PALM OIL, BUTTEROIL, LECITHIN AS EMULSIFIER, VANILLIN: AN ARTIFICIAL FLAVOR.
+                </p>
+                <p class="ingredients_last_line">
+                    CONTAINS MILK, SOY.
+                </p>
+            </div>
+            <div class="nutritional">
+                <h1>NUTRITIONAL INFO</h1>
+                <table>
+                    <thead style="text-align: center">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>
+                                <p>
+                                    Kinder Chocolate<br>
+                                    Amount/Serving<br>
+                                    (2 bars)
+                                </p>
+                            </th>
+                            <th>% DV*</th>
+                            <th>
+                                <p>
+                                    Kinder Chocolate<br>
+                                    Share Size<br>
+                                    Amount/Serving<br>
+                                    (1 large bar)
+                                </p>
+                            </th>
+                            <th>% DV*</th>
+                            <th>
+                                <p>
+                                    Kinder Chocolate Mini<br>
+                                    Amount/Serving<br>
+                                    (5 mini bars)
+                                </p>
+                            </th>
+                            <th>% DV*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><strong>Calories</strong></th>
+                            <td>140</td>
+                            <td>&nbsp;</td>
+                            <td>120</td>
+                            <td>&nbsp;</td>
+                            <td>170</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Total Fat</strong></th>
+                            <td>9g</td>
+                            <td>12%</td>
+                            <td>7g</td>
+                            <td>9%</td>
+                            <td>11g</td>
+                            <td>13%</td>
+                        </tr>
+                        <tr>
+                            <th>Sat. Fat</th>
+                            <td>6g</td>
+                            <td>30%</td>
+                            <td>5g</td>
+                            <td>25%</td>
+                            <td>7g</td>
+                            <td>34%</td>
+                        </tr>
+                        <tr>
+                            <th><em>Trans</em>&nbsp;Fat</th>
+                            <td>0g</td>
+                            <td>&nbsp;</td>
+                            <td>0g</td>
+                            <td>&nbsp;</td>
+                            <td>0g</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Cholesterol</strong></th>
+                            <td>10mg</td>
+                            <td>3%</td>
+                            <td>5mg</td>
+                            <td>2%</td>
+                            <td>10mg</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Sodium</strong></th>
+                            <td>30mg</td>
+                            <td>1%</td>
+                            <td>25mg</td>
+                            <td>1%</td>
+                            <td>35mg</td>
+                            <td>2%</td>
+                        </tr>
+                        <tr>
+                            <th>Total Carb.</th>
+                            <td>13g</td>
+                            <td>4%</td>
+                            <td>11g</td>
+                            <td>4%</td>
+                            <td>16g</td>
+                            <td>6%</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Fiber</strong></th>
+                            <td>0g</td>
+                            <td>&nbsp;</td>
+                            <td>0g</td>
+                            <td>&nbsp;</td>
+                            <td>&lt;1g</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Total Sugars</strong></th>
+                            <td>13g (Incl. 10g Added Sugars)</td>
+                            <td>20%</td>
+                            <td>11g (Incl. 8g Added Sugars)</td
+                            ><td>16%</td>
+                            <td>16g (Incl. 12g Added Sugars)</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Protein</strong></th>
+                            <td>2g</td>
+                            <td>&nbsp;</td>
+                            <td>2g</td>
+                            <td>&nbsp;</td>
+                            <td>3g</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Vitamin D</strong></th>
+                            <td>0mcg</td>
+                            <td>&nbsp;</td>
+                            <td>0mcg</td>
+                            <td>&nbsp;</td>
+                            <td>0mcg</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Calcium</strong></th>
+                            <td>75mg</td>
+                            <td>6%</td>
+                            <td>63mg</td>
+                            <td>4%</td>
+                            <td>90mg</td>
+                            <td>6%</td>
+                        </tr>
+                        <tr>
+                            <th>Iron</th>
+                            <td>0mg</td>
+                            <td>&nbsp;</td>
+                            <td>0mg</td>
+                            <td>&nbsp;</td>
+                            <td>0mg</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Potassium</strong></th>
+                            <td>100mg</td>
+                            <td>2%</td>
+                            <td>84mg</td>
+                            <td>2%</td>
+                            <td>120mg</td>
+                            <td>2%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    *%DV = %Daily Value.<br>
+                    <br>
+                    *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000
+                    calories a day is used for general nutritional advice.
+                </p>
+            </div>
+        </div>
+        
+        <div class="social_media">
+            <div class="social_media_header">
+                FOLLOW KINDER ON SOCIAL MEDIA.
+            </div>
+            <div class="social_media_cards">
+                <div class="social_media_card">
+                    <a href="https://x.com/kinderUS" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card1">
+                            <img src="/Images/kinder_chocolate_twitter.avif" alt="Twitter"/>
+                            <p><i class="fa-brands fa-square-x-twitter"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social_media_card">
+                    <a href="https://www.facebook.com/KinderUS/" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card2">
+                            <img src="/Images/kinder_chocolate_facebook.webp" alt="Facebook"/>
+                            <p><i class="fa-brands fa-square-facebook"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social_media_card">
+                    <a href="https://www.instagram.com/KinderUS/" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card3">
+                            <img src="/Images/kinder_chocolate_insta.webp" alt="Instagram"/>
+                            <p><i class="fa-brands fa-square-instagram"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerContent">
+                <!-- Ferrero -->
+                <div class="ferrero">
+                    <img src="/Images/ferroro.png" width="140px" height="19px" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="noFullWidth menuItem">
+                            <a href="cookies.html">Cookie Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="technical.html">Technical Requirements</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="site.html">Site Map</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="ads.html">About our Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Language Set Area -->
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+    </div>
+</body>
+</html>

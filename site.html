@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Kinder™ USA - Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="/Images/title_icon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="/Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="/Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <!-- Content - FIXED STRUCTURE -->
+        <div class="content">
+            <h1 class="header">SITEMAP</h1>
+            <ul class="sitemap-list">
+                <li>
+                    <a href="home.html">KINDER: CHOCOLATE BARS, CHOCOLATE EGGS & MORE</a>
+                </li>
+                <li>
+                    <a href="ourStory.html">THE KINDER STORY</a>
+                    <ul class="sub_list">
+                        <li><a href="ourStory.html">Our Story</a></li>
+                        <li><a href="ourMission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="kinderJoy.html">PRODUCTS</a>
+                    <ul class="sub_list">
+                        <li><a href="kinderChocolate.html">Kinder Chocolate</a></li>
+                        <li><a href="kinderJoy.html">Kinder Joy</a></li>
+                        <li><a href="harryPotter.html">Kinder Joy Harry Potter</a></li>
+                        <li><a href="dcCollab.html">Kinder Joy DC</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                </li>
+                <li>
+                    <a href="applaydu.html">APPLAYDU</a>
+                </li>
+                <li>
+                    <a href="ourToys.html">OUR TOYS</a>
+                </li>
+                <li>
+                    <a href="whatsNew.html">WHAT'S NEW</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerContent">
+                <div class="ferrero">
+                    <img src="/Images/ferroro.png" width="140" height="19" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="menuItem"><a href="cookies.html">Cookie Policy</a></li>
+                        <li class="menuItem"><a href="technical.html">Technical Requirements</a></li>
+                        <li class="menuItem"><a href="terms.html">Terms of Use</a></li>
+                        <li class="menuItem"><a href="site.html">Site Map</a></li>
+                        <li class="menuItem"><a href="privacy.html">Privacy Policy</a></li>
+                        <li class="menuItem"><a href="ads.html">About our Ads</a></li>
+                    </ul>
+                </nav>
+
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+    </div>
+</body>
+</html>

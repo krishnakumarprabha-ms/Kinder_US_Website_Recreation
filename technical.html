@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Requirements - Kinder™ USA - Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="/Images/title_icon.ico" rel="icon">
+    <link href="technical.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <!-- Below 6 lines are for hamburger icon in mobile view -->
+            <!-- Below 1 line is for check box which is for toggle box -->
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <!-- Below 5 lines are for the three lines which act as the hamburger icon -->
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Here after it would be for the navigations -->
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="/Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="/Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <!-- Content -->
+
+        <div class="content">
+            <p>
+                <span class="header">TECHNICAL REQUIREMENTS</span><br>
+                <br>
+                <br>
+                In this section you can find a list of the hardware and software specifications necessary to see all content (animations and services)
+                on the site <a href="home.html">www.kinder.com</a><br>
+                <br>
+                <span class="heading">COMPATIBILITY</span>
+                <br>
+                PC:<br>
+                <br>
+                Browser Microsoft Internet Explorer 11 and above<br>
+                <br>
+                Browser Mozilla Firefox 51 and above<br>
+                <br>
+                Browser Google Chrome 58 and above<br>
+                <br>
+                MAC:<br>
+                <br>
+                Browser Safari 9.0 and above.<br>
+                <br>
+                Browser Mozilla Firefox 51 and above<br>
+                <br>
+                Browser Google Chrome 58 and above<br>
+                <br>
+                Video Resolution:<br>
+                <br>
+                Version optimized for 1280x960<br>
+                <br>
+                <span class="heading">SOFTWARE REQUIREMENTS</span>
+                <br>
+                PC:<br>
+                <br>
+                Operating system Microsoft Windows 7 or above<br>
+                <br>
+                MAC:<br>
+                <br>
+                Operating system Mac Os X and above
+            </p>
+        </div>        
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerContent">
+                <!-- Ferrero -->
+                <div class="ferrero">
+                    <img src="/Images/ferroro.png" width="140px" height="19px" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="noFullWidth menuItem">
+                            <a href="cookies.html">Cookie Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="technical.html">Technical Requirements</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="site.html">Site Map</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="ads.html">About our Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Language Set Area -->
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder Joy Chocolate Eggs with Surprise Toys Inside - Kinder™ USA – Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="/Images/title_icon.ico" rel="icon">
+    <link href="kinderJoy.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/162a460894.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <!-- Below 6 lines are for hamburger icon in mobile view -->
+            <!-- Below 1 line is for check box which is for toggle box -->
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <!-- Below 5 lines are for the three lines which act as the hamburger icon -->
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Here after it would be for the navigations -->
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="/Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="/Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <!-- Buy Now Option -->
+        <button id="buynow_btn" style="cursor:pointer;"><i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+        <div class="addcart" id="addcart-model">
+            <div class="popup">
+                <span class="close-btn" id="close" style="font-size: 2rem">&times;</span>
+                <div class="products">
+                    <h1>Kinder JOY</h1>
+                    <p>
+                        Treat + Toy, twice the Joy! Open up the
+                        iconic Kinder JOY egg and share a moment
+                        of surprise and delight. One side holds a
+                        delicious treat: two layers of milky sweet
+                        creams, topped with two crispy wafer bites
+                        filled with cocoa cream. The other side
+                        holds an exciting mystery toy! Extend the
+                        Kinder Joy playing experience and enter the
+                        imaginative world of Applaydu, a free and
+                        fun educational game app designed for
+                        kids. Applaydu revolutionizes kid’s play,
+                        helps develop creativity and supports
+                        children’s growth through fun family
+                        activities that can be played together, even
+                        offline. It is 100% free to download, has no
+                        ads, no in-app purchases, and supports 16
+                        languages!
+                    </p>
+                    <div class="products_list">
+                        <div class="product count3" data-id="1" data-name="Kinder JOY - 3 count" data-price="436.91" data-image="/Images/addToCart3.jpg">
+                            <p>Kinder JOY - 3 Count</p>
+                            <p>Price: ₹436.91</p>
+                            <img src="/Images/addToCart3.jpg" alt="Kinder JOY pack of count 3" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                        <div class="product count6" data-id="2" data-name="Kinder JOY - 6 count" data-price="726.59" data-image="/Images/addToCart6.jpg">
+                            <p>Kinder JOY - 6 Count</p>
+                            <p>Price: ₹726.59</p>
+                            <img src="/Images/addToCart6.jpg" alt="Kinder JOY pack of count 6" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="products_list">
+                        <div class="product count12" data-id="3" data-name="Kinder JOY - 12 count" data-price="1453.54" data-image="/Images/addToCart12.jpg">
+                            <p>Kinder JOY - 12 Count</p>
+                            <p>Price: ₹1,453.54</p>
+                            <img src="/Images/addToCart12.jpg" alt="Kinder JOY pack of count 9" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                        <div class="product count16" data-id="4" data-name="Kinder JOY - 15 count" data-price="1817.31" data-image="/Images/addToCart15.jpg">
+                            <p>Kinder JOY - 15 Count</p>
+                            <p>Price: ₹1,817.31</p>
+                            <img src="/Images/addToCart15.jpg" alt="Kinder JOY pack of count 15" height="120px" width="150px">
+                            <button class="addToCart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <h1>CART</h1>
+                    <div class="contentCart">
+                        <p id="empty"></p>
+                    </div>
+                    <button id="creditBtn">Click to Proceed</button>
+                    <p id="cartresult"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Credit Card Pop Up -->
+        <div class="creditPopup">
+            <div class="creditContent">
+                <p class="exit" id="exit-btn" style="cursor:pointer;">✗</p>
+                <h1>Card Details</h1>
+                <form class="form">
+                    <label for="name">CARDHOLDER NAME</label>
+                    <div></div>
+                    <input id="name" placeholder="e.g. Jane Appleseed." type="text" required/>
+                    <div></div>
+                    <label for="number">CARD NUMBER</label>
+                    <div></div>
+                    <input id="number" placeholder="e.g. 1234 5678 9123 0000" type="number" required/>
+                    <div></div>
+                    <label for="month">EXP.DATE (MM/YY)</label>
+                    <div class="expire_date">
+                        <input id="month" type="number" min="1" max="12" placeholder="MM" required/>
+                        <input id="year" type="number" placeholder="YY" min="25" max"99" required/>
+                    </div>
+                    <label for="cvc">CVC</label>
+                    <input id="cvc" type="number" placeholder="e.g. 123" required/>
+                    <div></div>
+                    <button id="buy__btn">Confirm</button>
+                    <p class="finalResult"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Area -->
+        <section class="slide_container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div id="slide1" class="slide1">
+                        <div class="slide1_left">
+                            <div class="content">
+                                <h1>TREAT + TOY.... TWICE THE JOY<sup>™</sup></h1>
+                                <p>
+                                    KINDER JOY® is a delicious treat in an iconic egg shape to
+                                    surprise and delight! One half of the egg contains two layers of
+                                    milky sweet creams topped with 2 crispy wafer bites filled with
+                                    cocoa cream. The other half of the egg contains an exciting
+                                    surprise toy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide1_right">
+                            <img src="/Images/kinder-joy-slide.jpg" alt="Kinder Joy Slide"/>
+                        </div>
+                    </div>
+                    <div id="slide2" class="slide2">
+                        <div class="slide2_left">
+                            <div class="content">
+                                <h1>THE VALUE OF PLAY</h1>
+                                <br>
+                                <p>
+                                    Share moments through the joy of playing together. With KINDER
+                                    JOY<sup>®</sup>, imaginations run wild! Come together and connect with
+                                    your loved ones with a mystery toy and treat.
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="slide2_right">
+                            <img src="Images/kinder-joy-11-2020-slider-image2-v1_0.webp" alt="Kinder Joy Slide"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide1"></a>
+                    <a href="#slide2"></a>
+                </div>
+            </div>
+        </section>
+        <div class="content">
+            <div class="section_01">
+                <div class="left_part">
+                    <img src="Images/kj-everyday-single-carousel-1.webp" alt="Girl Eating Kinder Joy" height="450px" width="550px">
+                </div>
+                <div class="right_part">
+                    <h1>THE TREAT</h1>
+                    <p>
+                        KINDER JOY® is a delicious treat made of two soft cream layers – one sweet
+                        milk-cream flavored and one cocoa flavored.  Nestled into the creamy layers 
+                        are two round, chocolate-covered wafer bites that are filled with sweet cocoa
+                        cream, to be eaten with the included spoon.
+                    </p>
+                </div>
+            </div>
+            <div class="section_02">
+                <div class="left_part">
+                    <h1>THE TOY</h1>
+                    <p>
+                        Half an egg is all the space Kinder™ needs to provide creative toys that
+                        spark the imagination and bring hours of fun. Each KINDER JOY® toy is
+                        created with the goal of surprising your kids every single day. In addition to
+                        being a surprise, KINDER JOY® toys engage kids through assembly,
+                        imagination, and interaction in order to extend the fun of playing beyond the
+                        initial excitement of discovering the toy.
+                    </p>
+                </div>
+                <div class="right_part">
+                    <img src="/Images/twitter.jpg" alt="Girl Eating Kinder Joy" height="450px" width="550px">
+                </div>
+            </div>
+        </div>
+        <div class="nutrient">
+            <div class="ingredients">
+                <h1>INGREDIENTS</h1>
+                <p>
+                    INGREDIENTS: Sugar, Vegetable Oils (Palm, Sheanut and Sunflower), Skim Milk Powder, Wheat Flour, Cocoa, Wheat Starch, Cocoa Mass, Malt Extract, Lecithin as Emulsifier, Whey Proteins, Cocoa Butter, Artificial Flavors, Ammonium Bicarbonate and Sodium Bicarbonate as Leavening Agents, Salt.
+                </p>
+                <p class="ingredients_last_line">
+                    CONTAINS MILK, WHEAT AND SOY.
+                </p>
+            </div>
+            <div class="nutritional">
+                <h1>NUTRITIONAL INFO</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&nbsp</th>
+                            <th>
+                                Amount/Serving
+                                <br>
+                                (1 egg or 20g)
+                            </th>
+                            <th>%DV *</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <strong>Calories</strong>
+                            </th>
+                            <td>110</td>
+                            <td>&nbsp</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <strong>Total Fat</strong>
+                            </th>
+                            <td>6g</td>
+                            <td>8%</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Sat.fat
+                            </th>
+                            <td>3g</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Trans Fat
+                            </th>
+                            <td>0g</td>
+                            <td>&nbsp</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <strong>Total Concentration</strong>
+                            </th>
+                            <td>12g</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <th>Fiber</th>
+                            <td>&lt;1g</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Total Sugars
+                                <br>
+                                (includes 8g added sugars)
+                            </th>
+                            <td>10g</td>
+                            <td>16%</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <strong>Protein</strong>
+                            </th>
+                            <td>2g</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Cholesterol</strong></th>
+                            <td>0mg</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Sodium</strong></th>
+                            <td>25mg</td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <strong>Vitamin D</strong>
+                            </th>
+                            <td>0mcg</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Calcium</strong></th>
+                            <td>40mg</td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <th>Iron</th>
+                            <td>0mg</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Potassium</strong></th>
+                            <td>0mg</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    *%DV = %Daily Value.<br>
+                    <br>
+                    *The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000
+                    calories a day is used for general nutritional advice.
+                </p>
+            </div>
+        </div>
+        <div class="social_media">
+            <div class="social_media_header">
+                SHARE THE JOY! <span>FOLLOW KINDER<sup>™</sup> ON SOCIAL MEDIA.</span>
+            </div>
+            <div class="social_media_cards">
+                <div class="social_media_card">
+                    <a href="https://x.com/kinderUS" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card1">
+                            <img src="Images/twitter.jpg" alt="Twitter"/>
+                            <p><i class="fa-brands fa-square-x-twitter"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social_media_card">
+                    <a href="https://www.facebook.com/KinderUS/" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card2">
+                            <img src="Images/facebook.jpg" alt="Facebook"/>
+                            <p><i class="fa-brands fa-square-facebook"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="social_media_card">
+                    <a href="https://www.instagram.com/KinderUS/" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="social_media_card3">
+                            <img src="Images/insta.jpg" alt="Instagram"/>
+                            <p><i class="fa-brands fa-square-instagram"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerContent">
+                <!-- Ferrero -->
+                <div class="ferrero">
+                    <img src="/Images/ferroro.png" width="140px" height="19px" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="noFullWidth menuItem">
+                            <a href="cookies.html">Cookie Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="technical.html">Technical Requirements</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="site.html">Site Map</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="ads.html">About our Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Language Set Area -->
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+        <script src="carting.js"></script>
+    </div>
+</body>
+</html>

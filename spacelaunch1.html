@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrero Kinder - Digital Catalogue - Kinder™ USA – Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="/Images/title_icon.ico" rel="icon">
+    <link href="toysDescription.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/162a460894.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <!-- Below 6 lines are for hamburger icon in mobile view -->
+            <!-- Below 1 line is for check box which is for toggle box -->
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <!-- Below 5 lines are for the three lines which act as the hamburger icon -->
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Here after it would be for the navigations -->
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="/Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="/Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="left">
+                <img src="Images/space_launch1.avif" alt="armstrong">
+            </div>
+            <div class="right">
+                <h1>SPACE LAUNCH 1</h1>
+                <p>
+                    <strong>Space Launcher 1</strong><br>
+                    Your child will love to launch this snazzy spaceship, which includes a cool carboard character hidden inside!
+                </p>
+            </div>
+        </div>
+        <div class="qr">
+            <img src="Images/space_launch_qr.avif" alt="Scan and Play" width="750px" height="350px"/>
+        </div>
+        <div class="social">
+            <p>
+                SHARE YOUR TOYS
+            </p>
+            <div class="icons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.kinder.com%2Fus%2Fen%2Faldrin-kinder-surprise&t=ALDRIN%20-%20Kinder%20Surprise&quote=">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://x.com/intent/post?text=ALDRIN%20-%20Kinder%20Surprise%20https%3A%2F%2Fwww.kinder.com%2Fus%2Fen%2Faldrin-kinder-surprise">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="https://vk.com/">
+                    <i class="fa-brands fa-vk"></i>
+                </a>
+                <a href="mailto:info@kinders.com">
+                    <i class="fa-solid fa-square-envelope"></i>
+                </a>
+                <a href="https://www.kinder.com/us/en/aldrin-kinder-surprise">
+                    <i class="fa-brands fa-square-pinterest"></i>
+                </a>
+            </div>
+        </div>
+        <div class="back">
+            <a href="ourToys.html">
+                BACK TO OVERVIEW <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerContent">
+                <!-- Ferrero -->
+                <div class="ferrero">
+                    <img src="/Images/ferroro.png" width="140px" height="19px" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="noFullWidth menuItem">
+                            <a href="cookies.html">Cookie Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="technical.html">Technical Requirements</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="site.html">Site Map</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="ads.html">About our Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Language Set Area -->
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+    </div>
+</body>
+</html>

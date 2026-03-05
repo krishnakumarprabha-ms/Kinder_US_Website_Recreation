@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinder™ USA - Chocolate Bars, Chocolate Eggs & More</title>
+    <link href="./Images/title_icon.ico" rel="icon">
+    <link href="home.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="navbarContainer">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="./Images/logo.svg" alt="Logo of Kinder">
+                </a>
+            </div>
+
+            <!-- Below 6 lines are for hamburger icon in mobile view -->
+            <!-- Below 1 line is for check box which is for toggle box -->
+            <input type="checkbox" id="hamburgerToggle" class="hamburgerToggle">
+            <!-- Below 5 lines are for the three lines which act as the hamburger icon -->
+            <label for="hamburgerToggle" class="hamburgerIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Here after it would be for the navigations -->
+            <nav class="navigationBar">
+                <ul class="navigationLinks">
+                    <li class="dropDown">
+                        <a href="ourStory.html">THE KINDER STORY</a>
+                        <ul class="dropDownContent1">
+                            <li><a href="ourStory.html">OUR STORY</a></li>
+                            <li><a href="ourMission.html">OUR MISSION</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropDown">
+                        <a href="kinderJoy.html">PRODUCTS</a>
+                        <ul class="dropDownContent2">
+                            <li>
+                                <a href="kinderChocolate.html">
+                                    <img src="./Images/kinder-chocolate-menu.png" alt="Kinder Chocolate Page Button">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kinderJoy.html">
+                                    <img src="./Images/kinder-joy-menu.png" alt="Kinder Joy Menu Button">
+                                </a>
+                            </li>
+                        </ul>           
+                    </li>
+                    <li class="underline">
+                        <a href="joyOfMoving.html">KINDER JOY OF MOVING</a>
+                    </li>
+                    <li class="underline">
+                        <a href="applaydu.html">APPLAYDU</a>
+                    </li>
+                    <li class="underline">
+                        <a href="ourToys.html">OUR TOYS</a>
+                    </li>
+                    <li class="underline">
+                        <a href="whatsNew.html">WHAT'S NEW</a>
+                    </li>
+                    <li class="underline" id="loginLink">
+                        <a href="#" id="loginBtn">LOGIN</a>
+                    </li>
+                    <li class="underline" id="signLink">
+                        <a href="#" id="signBtn">SIGN UP</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Signup -->
+        <div id="signUp" class="popup1">
+            <div class="popup1Content">
+                <span class="closeBtn" id="closePopup1">✗</span>
+                <h2>ACCOUNT SIGN-UP</h2>
+                <form id="signUpForm">
+                    <label for="newUsername">Username</label>
+                    <input type="text" id="newUsername" required>
+                    <label for="newGmail">E-Mail</label>
+                    <input type="email" id="newGmail" required>
+                    <label for="newPassword">Password</label>
+                    <input type="password" id="newPassword" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
+                <p id="signUpMessage"></p>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="popup2">
+            <div class="popup2Content">
+                <span class="closeBtn" id="closePopup2">✗</span>
+                <h2>ACCOUNT LOG IN</h2>
+                <form id="logInForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">LOG IN</button>
+                </form>
+                <p id="loginMessage"></p>
+            </div>
+        </div>
+        
+        <!-- Slider -->
+        <section class="slideContainer">
+            <div class="slideWrapper">
+                <div class="slider" id="slider">
+                    <!-- Slide 1: Kinder Chocolate -->
+                    <div id="slide1" class="slide1">
+                        <div class="slide1Left">
+                            <div class="content">
+                                <h1 style="font-size: 6rem; line-height: 1;">KINDER<br>CHOCOLATE</h1>
+                                <p style="font-size: 2rem;">
+                                    A DELICIOUS TREAT OF <span style="font-weight: bold;">SMOOTH MILK CHOCOLATE</span> WITH A <span style="font-weight: bold;">CREAMY MILKY 
+                                    FILLING</span> COMES IN SMALL, INDIVIDUALLY WRAPPED PORTIONS. IT WAS CREATED WITH KINDS IN MIND, MEANT TO BE SHARED BY EVERYONE, 
+                                    ANYONE, ANYWHERE
+                                </p>
+                                <h4 style="font-size: 2.5rem;">NOW IN THE USA!</h4>
+                                <a href="kinderChocolate.html">
+                                    <div class="button">
+                                        <button>LEARN MORE</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide1Right">
+                            <img src="./Images/kinder-chocolate-slide.jpg" alt="Kinder Chocolate Slider Image">
+                        </div>
+                        <svg class="bottomCurve" viewBox="0 0 1440 150" preserveAspectRatio = "none">
+                            <path d="M0,0 C480,150 960,150 1440,150 L1440,150 L0,150 Z" fill="#FAF5ED"></path>
+                        </svg>
+                    </div>
+            
+                    <!-- Slide 2: Kinder Joy -->
+                    <div id="slide2" class="slide2">
+                        <div class="slide2Left">
+                            <div class="content">
+                                <h1 style="font-size: 6rem; line-height: 1;">KINDER JOY <sup>®</sup></h1><br>
+                                <p style="font-size: 2rem;">
+                                    A two-in-one treat that is sure to surprise and 
+                                    delight!
+                                </p>
+                                <br>
+                                <a href="kinderJoy.html">
+                                    <div class="button">
+                                        <button>LEARN MORE</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide2Right">
+                            <img src="./Images/kinder-joy-slide.jpg" alt="Kinder Joy Slider Image">
+                        </div>
+                        <svg class="bottomCurve" viewBox="0 0 1440 150" preserveAspectRatio = "none">
+                            <path d="M0,0 C480,150 960,150 1440,150 L1440.150 L0,150 Z" fill="#FAF5ED"></path>
+                        </svg>
+                    </div>
+            
+                    <!-- Slide 3: Joy of Moving -->
+                    <div id="slide3" class="slide3">
+                        <div class="slide3Left">
+                            <div class="content">
+                                <h1 style="font-size: 6rem; line-height: 1;">JOY OF MOVING METHODOLOGY</h1>
+                                <p style="font-size: 2rem;">
+                                    A complete child development through playful, movement-based activities that enhance physical, emotional, and cognitive growth.
+                                </p>
+                                <a href="joyOfMoving.html">
+                                    <div class="button">
+                                        <button>LEARN MORE</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide3Right">
+                            <img src="./Images/joy_moving_slide.avif" alt="Joy of Moving Slider Image">
+                        </div>
+                        <svg class="bottomCurve" viewBox="0 0 1440 150" preserveAspectRatio = "none">
+                            <path d="M0,0 C480,150 960,150 1440,150 L1440.150 L0,150 Z" fill="#FAF5ED"></path>
+                        </svg>
+                    </div>
+                            
+                    <!-- Navigation Dots for Slider -->
+                    <div class="sliderNav">
+                        <span class="linker active"></span>
+                        <span class="linker"></span>
+                        <span class="linker"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Cards Section for Products -->
+        <div class="cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="cardContent">
+                    <div class="card1Image">
+                        <a href="kinderChocolate.html">
+                            <button>KINDER CHOCOLATE</button>
+                        </a>
+                    </div>
+                    <div class="card1Content">
+                        <p>
+                            A delicious treat of smooth milk <br>
+                            chocolate with a creamy milky <br>
+                            filling that comes in small, <br>
+                            individually wrapped portions.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardDuplicate"></div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="cardContent">
+                    <div class="card2Image">
+                        <a href="kinderJoy.html">
+                            <button>KINDER JOY<sup>®</sup></button>
+                        </a>
+                    </div>
+                    <div class="card2Content">
+                        <p>
+                            Surprise and delight your loved <br>
+                            with an amaizing two-in-one <br>
+                            treat.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardDuplicate"></div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="cardContent">
+                    <div class="card3Image">
+                        <a href="joyOfMoving.html">
+                            <button>Joy of Moving</button>
+                        </a>
+                    </div>
+                    <div class="card3Content">
+                        <p>
+                            Inspires children to discover the joy of movement, supporting their overall development in a fun and engaing way.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardDuplicate"></div>
+            </div>
+        </div>
+
+        <!-- Advertisement Section -->
+        <section class="advertisment">
+            <div class="advertismentContent">
+                <div class="advertismentText">
+                    <h2>
+                        CHECK OUT OUR <br>
+                        LATEST KINDER <br>
+                        CHOCOLATE <br>
+                        TV SPOT
+                    </h2>
+                </div>
+                <div class="videoFrame">
+                    <video autoplay muted loop controls>
+                        <source src="./Images/home_advertisement.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover Product Section -->
+        <section class="product">
+            <!-- Header -->
+            <div class="headerContainer">
+                <div class="header">
+                    <h2 class="kinderMulticolorTitle" style="margin-top: 4rem;">
+                        <span class="black">DISCOVER</span>
+                        <span class="red">KINDER JOY<sup>®</sup></span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Doodle Line -->
+            <div class="doodleLine">
+                <svg class="svgLine" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.3 521.3">
+                    <path fill="none" stroke="#009FE3" stroke-width="2.2" stroke-dasharray="6.6, 13.2" d="M448 467l382.8-114.4S950.2 291 1062.7 324c84.7 24.9 241.7 39.4 351.3-66.1M33 2s-193 703 415 465"></path>
+                </svg>
+            </div>
+
+            <!-- Coin Effect -->
+            <div class="coin">
+                <a href="#" style="cursor: pointer;">
+                    <div class="face front">
+                        <img src="./Images/discover_product_image1.png" alt="Kinder Joy Egg Closed Packet">
+                    </div>
+                    <div class="face back">
+                        <img src="./Images/discover_product_image2.png" alt="Kinder Joy Egg Opened Packet">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Image Content -->
+            <div class="productImageContent">
+                <p>
+                    A TWO-IN-ONE TREAT THAT IS SURE TO SURPRISE <br>
+                    AND DELIGHT
+                </p>
+            </div>
+
+            <div class="productImageContentButton">
+                <a href="kinderJoy.html">
+                    <button>KINDER JOY<sup>®</sup></button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <div class="socialMedia">
+            <div class="socialMediaHeader">
+                SHARE THE JOY! <span>FOLLOW KINDER<sup>™</sup> ON SOCIAL MEDIA.</span>
+            </div>
+            <div class="socialMediaCards">
+                <div class="socialMediaCard">
+                    <a href="https://x.com/kinderUS" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="socialMediaCard1">
+                            <img src="./Images/twitter.jpg" alt="Twitter Image">
+                            <p>Twitter</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="socialMediaCard">
+                    <a href="https://www.facebook.com/KinderUS/" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="socialMediaCard2">
+                            <img src="./Images/facebook.jpg" alt="Facebook Image">
+                            <p>Facebook</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="socialMediaCard">
+                    <a href="https://www.instagram.com/KinderUS/" style="text-decoration: none; color: white;" target="_blank">
+                        <div class="socialMediaCard3">
+                            <img src="./Images/insta.jpg" alt="Instagram Image">
+                            <p>Instagram</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footerContent">
+                <!-- Ferrero -->
+                <div class="ferrero">
+                    <img src="./Images/ferroro.png" width="140px" height="19px" alt="Ferrero Logo Image">
+                    <p>© Ferrero - All rights reserved</p>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="footerNavigation">
+                    <ul class="menu">
+                        <li class="noFullWidth menuItem">
+                            <a href="cookies.html">Cookie Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="technical.html">Technical Requirements</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="terms.html">Terms of Use</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="site.html">Site Map</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="noFullWidth menuItem">
+                            <a href="ads.html">About our Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Language Set Area -->
+                <div class="language">
+                    <ul class="languageLinks">
+                        <li class="en">EN</li>
+                        <li class="es">ES</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="accounts.js"></script>
+        <script src="slider.js"></script>
+    </div>
+</body>
+</html>
